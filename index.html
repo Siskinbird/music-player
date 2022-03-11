@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Player</title>
+        <link rel="shortcut icon" href="./favico.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="material-icons">expand_more</i>
+            <span>Now playing</span>
+            <i class="material-icons">more_horiz</i>
+        </div>
+        <div class="img-area">
+            <img src="" alt="1">
+        </div>
+        <div class="song-details">
+            <p class="name"></p>
+            <p class="artist"></p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar">
+            </div>
+            <div class="timer">
+                <span class="current"></span>
+                <span class="duration"></span>
+            </div>
+            <audio id="main-audio" src=""></audio>
+        </div>
+        <div class="controls">
+            <i id="repeat-plist" title="Playlist" class="material-icons">repeat</i>
+            <i id="prev" class="material-icons">skip_previous</i>
+            <div class="play-pause">
+                <i class="material-icons">play_arrow</i>
+            </div>
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i id="more-music" class="material-icons">queue_music</i>
+                    <span>Musiс list</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
+            </div>
+            <ul>
+
+            </ul>
+        </div>
+        <footer class="footer">
+            <div class="github-link">© 2022 <a href="https://github.com/Siskinbird">myGit</a></div>
+            <div class="rs-link"><a href="https://rs.school/js-stage0/">rs-school</a></div>
+        </footer>
+    </div>
+    <script src="./music-list.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
